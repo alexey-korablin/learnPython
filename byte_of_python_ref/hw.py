@@ -27,4 +27,23 @@ res12 = '{0:_^11}'.format('hello')
 
 # или заполнить шаблон по ключевым словам
 res13 = '{name} has wrote {book}'.format(name='Swaroop', book='A Byte of Python')
-print(res13)
+# print(res13)
+
+# 2.0 ПЕРЕМЕННЫЕ
+i = 5
+# print(i)
+i = i + 1
+# print(i)
+
+s = '''This is a multiline string.
+The second line of the multiline string'''
+# print(s)
+
+# Запись нескольких логических строк на одной физической (является плохим стилем)
+# i = 7; print(i)
+
+# Явное объединение строк возможно с помощью символа \
+s = 'It is a string. ' \
+    'The string is continuing'
+print\
+(s)
