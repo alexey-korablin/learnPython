@@ -66,4 +66,31 @@ y = False
 # Оператор ЛОГИЧЕСКОЕ ИЛИ or (x = True; y = False; x or y -> True)
 x = True
 y = False
-print(x or y)
+# print(x or y)
+
+# Приоритет операторов
+# Высокий
+#   lambda
+#   or
+#   and
+#   not
+#   in, not in
+#   is, is not
+#   <, <=, >, >=, !=, ==
+#   |
+#   ^
+#   &
+#   <<, >>
+#   +, -
+#   *, /, //, %
+#   +x, -x
+#   ~
+#   **
+#   x.attribute
+#   x[index]
+#   x[index1:index2]
+#   f(arguments...)
+#   (expressions, ...)
+#   [expressions, ...]
+#   {key:value, ...}
+# Низкий
