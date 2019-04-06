@@ -9,7 +9,16 @@ source = ['D:\\loki\\legacy\\python3\\learnPython\\byte_of_python_ref\\data',
           'D:\\loki\\legacy\\python3\\py3-simple_2d_game']
 target_dir = 'D:\\loki\\legacy\\python3\\learnPython\\byte_of_python_ref\\backup'
 
-target = target_dir + os.sep + time.strftime('%Y%m%d%H%M%S') + '.zip'
+today = target_dir + os.sep + time.strftime('%Y%m%d')
+
+now = time.strftime('%H%M%S')
+
+if not os.path.exists(today):
+    os.mkdir(today)
+
+print('Folder has been created successfully', today)
+
+target = today + os.sep + now + '.zip'
 
 zip_command = 'zip -qr {0} {1}'.format(target, ' '.join(source))
 
