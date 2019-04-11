@@ -39,9 +39,9 @@ z = zipfile.ZipFile(target, 'w')
 
 for folder in source:
     for root, dirs, files in os.walk(folder):
-        print(root)
-        print(dirs)
-        print('files =>', files)
+        # print(root)
+        # print(dirs)
+        # print('files =>', files)
         for file in files:
             z.write(os.path.join(root, file))
 
