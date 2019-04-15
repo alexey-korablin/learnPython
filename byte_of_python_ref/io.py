@@ -40,44 +40,44 @@
 # Режимы: r - чтение, w - запись, a - добавление
 # Вид в котором открывается файл: t - текстовый, b - бинарный
 
-# poem = '''\
-# Программировать весело,
-# Если работа скучна,
-# Чтобы придать ей веселый тон -
-#     используй Python!
-# '''
-#
-# f = open('data/poem.txt', 'w')
-# f.write(poem)
-# f.close()
-#
-# f = open('data/poem.txt', 'r')
-#
-# while True:
-#     line = f.readline()
-#     if len(line) == 0:
-#         break
-#     print(line, end='')
-#
-# f.close()
+poem = '''\
+Программировать весело,
+Если работа скучна,
+Чтобы придать ей веселый тон -
+    используй Python!
+'''
+
+f = open('data/poem.txt', 'w')
+f.write(poem)
+f.close()
+
+f = open('data/poem.txt', 'r')
+
+while True:
+    line = f.readline()
+    if len(line) == 0:
+        break
+    print(line, end='')
+
+f.close()
 
 
 # Pickle
 
 # Для длительного хранения объект можно использовать встроеный модуль pickle
 
-import pickle
-
-shop_list_file = 'shoplist.data'
-shop_list = ['apples', 'mango', 'carrot']
-
-f = open(shop_list_file, 'wb')
-pickle.dump(shop_list, f)
-f.close()
-
-del shop_list
-
-f = open(shop_list_file, 'rb')
-
-stored_list = pickle.load(f)
-print(stored_list)
+# import pickle
+#
+# shop_list_file = 'shoplist.data'
+# shop_list = ['apples', 'mango', 'carrot']
+#
+# f = open(shop_list_file, 'wb')
+# pickle.dump(shop_list, f)
+# f.close()
+#
+# del shop_list
+#
+# f = open(shop_list_file, 'rb')
+#
+# stored_list = pickle.load(f)
+# print(stored_list)
